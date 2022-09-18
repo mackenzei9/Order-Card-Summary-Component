@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+}
+
+a {
+  color: hsl(245deg, 75%, 52%);
+  font-weight: 700;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(225deg, 100%, 94%);
+  background-image: url("../images/pattern-background-desktop.svg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.container .card {
+  width: 450px;
+  height: 700px;
+  background-color: hsl(225deg, 100%, 98%);
+  box-shadow: -2px 9px 23px 1px rgba(0, 0, 0, 0.38);
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.container .card .image {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.container .card .details {
+  text-align: center;
+  padding: 2.5rem;
+}
+.container .card .details .head {
+  text-align: center;
+}
+.container .card .details .head h1 {
+  font-size: 1.7rem;
+  color: hsl(223deg, 47%, 23%);
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+.container .card .details .head .desc {
+  color: hsl(224deg, 23%, 55%);
+  line-height: 1.6rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.container .card .details .plan {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  background-color: hsla(225deg, 100%, 94%, 0.5);
+  margin-top: 1.3rem;
+  padding: 1.3rem;
+  border-radius: 1rem;
+}
+.container .card .details .plan .kindOfPlan {
+  position: relative;
+  right: 40px;
+  margin-left: 1rem;
+}
+.container .card .details .plan .kindOfPlan .timing {
+  font-weight: 900;
+  color: hsl(223deg, 47%, 23%);
+}
+.container .card .details .plan .kindOfPlan .price {
+  opacity: 0.5;
+}
+.container .card .details .plan .change {
+  cursor: pointer;
+}
+.container .card .details .plan .change:hover {
+  opacity: 0.5;
+}
+.container .card .details .button {
+  width: fit;
+  padding: 1rem 1.2rem;
+  background-color: hsl(245deg, 75%, 52%);
+  box-shadow: -2px 9px 23px 1px rgba(39, 29, 149, 0.38);
+  color: hsl(225deg, 100%, 98%);
+  font-weight: 700;
+  border-radius: 1rem;
+  margin-top: 2.5rem;
+  cursor: pointer;
+}
+.container .card .details .button:hover {
+  opacity: 0.7;
+}
+.container .card .details .cancel {
+  margin-top: 2.5rem;
+  font-weight: 700;
+  color: hsl(224deg, 23%, 55%);
+  cursor: pointer;
+}
+.container .card .details .cancel:hover {
+  color: hsl(223deg, 47%, 23%);
+}
+.container footer {
+  position: absolute;
+  bottom: 13px;
+}
+
+@media (max-width: 450px) {
+  .container {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../images/pattern-background-mobile.svg");
+  }
+  .container .card {
+    width: 90%;
+    height: unset;
+  }
+  .container .card .image img {
+    max-width: 100%;
+  }
+  .container .card .details {
+    padding: 2rem;
+  }
+  .container .card .details .head {
+    margin-bottom: 2rem;
+  }
+  .container .card .details .plan .kindOfPlan {
+    right: 15px;
+  }
+  .container footer {
+    font-size: 0.8rem;
+  }
+}/*# sourceMappingURL=styles.css.map */

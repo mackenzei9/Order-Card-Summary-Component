@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+// VARIABLES
+
+$bg-clr:hsl(225, 100%, 94%);
+$card-clr:hsl(225, 100%, 98%);
+$imp-txt-clr:hsl(223, 47%, 23%);
+$desc-clr:hsl(224, 23%, 55%);
+$btn-clr:hsl(245, 75%, 52%);
+$ff-main:'Red Hat Display', sans-serif;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    font-family: $ff-main;
+}
+
+a{
+    color: $btn-clr;
+    font-weight: 700;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $bg-clr;
+    background-image: url("../images/pattern-background-desktop.svg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+    .card{
+        width:450px;
+        height: 700px;
+        background-color: $card-clr;
+        box-shadow: -2px 9px 23px 1px rgba(0, 0, 0, 0.38);
+        border-radius: 1rem;
+        overflow: hidden;
+        .image{
+            width: 100%;
+            height:fit-content;
+        }
+        .details{
+            text-align: center;
+            padding: 2.5rem;
+            .head{
+                text-align: center;
+                h1{
+                    font-size: 1.7rem;
+                    color: $imp-txt-clr;
+                    font-weight: 900;
+                    margin-bottom: 1rem;
+                }
+                .desc{
+                    color: $desc-clr;
+                    line-height: 1.6rem;
+                    font-size: 1.1rem;
+                    font-weight: 500;
+                }
+            }
+            .plan{
+                height: fit-content;
+                display: flex;
+                justify-content:space-around;
+                align-items: center;
+                text-align: center;
+                background-color: hsl(225, 100%, 94%,.5);
+                margin-top: 1.3rem;
+                padding: 1.3rem;
+                border-radius: 1rem;
+                .kindOfPlan{
+                    position: relative;
+                    right: 40px;
+                    margin-left: 1rem;
+                    .timing{
+                        font-weight: 900;
+                        color: $imp-txt-clr;
+                    }
+                    .price{
+                        opacity: .5;
+                    }
+                }
+                .change{
+                    cursor: pointer;
+                    &:hover{
+                        opacity: .5;
+                    }
+                }
+            }
+            .button{
+                width: fit;
+                padding: 1rem 1.2rem;
+                background-color: $btn-clr;
+                box-shadow: -2px 9px 23px 1px rgba(39, 29, 149, 0.38);
+                color: $card-clr;
+                font-weight: 700;
+                border-radius: 1rem;
+                margin-top: 2.5rem;
+                cursor: pointer;
+                &:hover{
+                    opacity: .7;
+                }
+            }
+            .cancel{
+                margin-top: 2.5rem;
+                font-weight: 700;
+                color: $desc-clr;
+                cursor: pointer;
+                &:hover{
+                    color: $imp-txt-clr;
+                }
+            }
+        }
+    }
+    footer{
+        position: absolute;
+        bottom: 13px;
+    }
+}
+
+@media(max-width:450px){
+    .container{
+        width: 100vw;
+        height: 100vh;
+        background-image: url("../images/pattern-background-mobile.svg");
+        .card{
+            width: 90%;
+            height: unset;
+            .image{
+                img{
+                    max-width: 100%;
+                }
+            }
+            .details{
+                padding: 2rem;
+                .head{
+                    margin-bottom: 2rem;
+                }
+                .plan{
+                    .kindOfPlan{
+                        right: 15px;
+                    }
+                }
+            }
+        }
+        footer{
+            font-size: .8rem;
+        }
+    }
+}
