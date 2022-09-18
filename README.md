@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: []()
-- Live Site URL: [](https://mackenzei9.github.io/Order-Card-Summary-Component/)
+- [Solution URL](https://github.com/mackenzei9/Order-Card-Summary-Component)
+- [Live Site URL](https://mackenzei9.github.io/Order-Card-Summary-Component/)
 
 ### Built with
 
@@ -53,10 +53,10 @@ This is a good template for times when i need to build a product or sevrvices ca
 
 ### Useful resources
 
-- Box shado CSS Generator[](https://html-css-js.com/css/generator/box-shadow/)
+-[Box shadow CSS Generator](https://html-css-js.com/css/generator/box-shadow/)
 
 ## Author
-
-- Github- [Mohammad Khorshidi](https://github.com/mackenzei9)
-- Frontend Mentor - [](https://www.frontendmentor.io/profile/mackenzei9)
-- LinkedIn - [@yourusername](https://www.linkedin.com/in/mackenzei/)
+  Mohammad Khorshidi
+- Github- [mackenzei9](https://github.com/mackenzei9)
+- Frontend Mentor - [mackenzei9](https://www.frontendmentor.io/profile/mackenzei9)
+- LinkedIn - [mackenzei](https://www.linkedin.com/in/mackenzei/)
