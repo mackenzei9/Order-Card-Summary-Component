@@ -53,7 +53,7 @@ This is a good template for times when i need to build a product or sevrvices ca
 
 ### Useful resources
 
--[Box shadow CSS Generator](https://html-css-js.com/css/generator/box-shadow/)
+-[CSS Box shadow Generator](https://html-css-js.com/css/generator/box-shadow/)
 
 ## Author
   Mohammad Khorshidi
